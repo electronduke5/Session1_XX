@@ -16,3 +16,11 @@ C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Session1_XX.csproj
 C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Session1_XX.csproj.CoreCompileInputs.cache
 C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Session1_XX.exe
 C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Session1_XX.pdb
+C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Pages\AdminPage.g.cs
+C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Pages\UsersPage.g.cs
+C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Pages\AdminPage.baml
+C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Pages\UsersPage.baml
+C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Pages\AddUserWindow.g.cs
+C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Pages\AddUserWindow.baml
+C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Pages\EditRoleWindow.g.cs
+C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\obj\Debug\Pages\EditRoleWindow.baml

@@ -6,9 +6,109 @@
       xmlns:local="clr-namespace:Session1_XX.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AdminPage">
+      Title="AdminPage" Background="White">
 
-    <Grid>
-        <Label Content="Admin"/>
-    </Grid>
+    <StackPanel VerticalAlignment="Top">
+        <Menu>
+            <MenuItem
+                Header="Add User"
+                Click="AddUser_Click"/>
+
+            <MenuItem
+                Header="Exit"
+                Click="Exit_Click"/>
+        </Menu>
+        <DockPanel>
+            <StackPanel 
+                Orientation="Horizontal"
+                DockPanel.Dock="Top"
+                Margin="0 0 0 10">
+                <TextBlock Margin="10">Office:</TextBlock>
+                <ComboBox 
+                    Width="100"
+                    Margin="10"
+                    Name="cbOffices">
+                </ComboBox>
+                <Button 
+                    Click="ClearFilter_Click"
+                    Margin="10">
+                    Clear filter
+                </Button>
+            </StackPanel>
+            <DataGrid
+                Name="dgUsers"
+                CanUserAddRows="True"
+                CanUserDeleteRows="True"
+                IsReadOnly="True"
+                Margin="10"
+                
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Stretch"
+                DockPanel.Dock="Top"
+                VerticalAlignment="Stretch"
+                VerticalContentAlignment="Stretch"
+                AutoGenerateColumns="False">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Header="Name"
+                        Binding="{Binding FirstName}"/>
+                    
+                    <DataGridTextColumn
+                        Header="Last name"
+                        Binding="{Binding LastName}"/>
+                    
+                    <DataGridTextColumn
+                        Header="Name"
+                        Binding="{Binding FirstName}"/>
+                    
+                    <DataGridTextColumn
+                        Header="Age"
+                        Binding="{Binding Age}"/>
+
+                    <DataGridTextColumn
+                        Header="User Role"
+                        Binding="{Binding RoleTitle}"/>
+
+                    <DataGridTextColumn
+                        Header="Email Address"
+                        Binding="{Binding Email}"/>
+
+                    <DataGridTextColumn
+                        Header="Office"
+                        Binding="{Binding OfficeTitle}"/>
+                </DataGrid.Columns>
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Style.Triggers>
+                            <DataTrigger
+                                Binding="{Binding Active}" Value="false">
+                                <Setter Property="Background" Value="Red"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+            </DataGrid>
+            <StackPanel
+                DockPanel.Dock="Bottom"
+                Orientation="Horizontal">
+                
+                <Button 
+                    Width="75"
+                    Name="btnChangeRole"
+                    Click="btnChangeRole_Click"
+                    Margin="10"
+                    Content="ChangeRole"
+                    />
+
+                <Button
+                    Name="btnToggleActive"
+                    Width="125"
+                    Margin="50 10 10 10"
+                    Click="btnToggleActive_Click"
+                    Content="Enable/Disable Login"/>
+            </StackPanel>
+        </DockPanel>
+    </StackPanel>
 </Page>

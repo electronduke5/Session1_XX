@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\gpav5\source\repos\Session1_XX\Session1_XX\App.xaml
-21045467010
+6-108326297
 
-7-1830199439
+12597933276
 13-38814620
-MainWindow.xaml;Pages\AuthPage.xaml;
+MainWindow.xaml;Pages\AddUserWindow.xaml;Pages\AdminPage.xaml;Pages\AuthPage.xaml;Pages\EditRoleWindow.xaml;Pages\UsersPage.xaml;
 
 False
 

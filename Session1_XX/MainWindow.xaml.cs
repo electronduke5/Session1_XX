@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Session1_XX.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Session1_XX
         public MainWindow()
         {
             InitializeComponent();
+            mainFrame.Navigate(new AuthPage(this));
         }
     }
 }
